@@ -1,0 +1,121 @@
+*{
+    margin  : 0 auto;
+    background-color: #000000;
+    color: rgb(206, 209, 212);
+}
+.nav,.nav1{
+text-align: end;
+text-decoration: none;
+padding: 20px;
+
+}
+#profile{
+    padding: 10px;
+}
+.photo{
+width: 250px;
+height: 250px;
+border-radius: 50%;
+position: relative;
+left: 800px;
+}
+.name{
+    position: relative;
+left: 200px;
+top: 120px;
+font-size: xx-large;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
+}
+#About,#skills,#work,#contact,.work1{
+text-align: center;
+font-size: xx-large;
+}
+.about_me{
+    text-align: center;
+
+}
+.skill_photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.allSkills{
+padding: 50px;
+
+}
+
+.back{
+  text-align: center;
+  font-size: x-large;
+}
+.con{
+  padding: 50px;
+  text-align:center;
+}
+.facebook,.whatsaap{
+  padding: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.booboo {
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #2c3e50; */
+  font-family: Arial, sans-serif;
+
+}
+
+.gallery-container {
+  perspective: 1000px; /* Allows us to see the 3D depth */
+}
+
+.gallery {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear; /* Continuous rotation */
+}
+
+.gallery img {
+  position:absolute;
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+/* Distribute the images around a circle */
+.gallery img:nth-child(1) { transform: rotateY(0deg) translateZ(300px); }
+.gallery img:nth-child(2) { transform: rotateY(72deg) translateZ(300px); }
+.gallery img:nth-child(3) { transform: rotateY(144deg) translateZ(300px); }
+.gallery img:nth-child(4) { transform: rotateY(216deg) translateZ(300px); }
+.gallery img:nth-child(5) { transform: rotateY(288deg) translateZ(300px); }
+
+/* Animation for the continuous 3D rotation */
+@keyframes rotate {
+  from {   transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+
+
+
+
+
